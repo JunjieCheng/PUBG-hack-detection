@@ -16,7 +16,7 @@ We used two parts of data as the train set and test set.
 
 * 500 players' data from [pubg.me/](pubg.me/). It contains top 100 users in ranking of five servers: as, na, eu, oc, and sea. After observation, we easily find a large number of abnormal data, which could be easily recognized as cheater’s data
 	
-* 85000 data from [https://www.kaggle.com/lazyjustin/pubgplayerstats](kaggle.com). Most data in this data set come from normal players. 
+* About 85000 data from [https://www.kaggle.com/lazyjustin/pubgplayerstats](kaggle.com). Most data in this data set come from normal players. 
 	
 In order to balance the proportion of cheaters and achieve a better training effectiveness, we took all ranked data and 2000 data from normal data set and mix together as the training set. In this case, the training data set could contain both normal data and data from cheaters. 
 
@@ -32,7 +32,7 @@ From the interview, we also learned that there are four features are most import
 
 ### Module training
 
-After trying couples of algorithm, we selected K-means to be the model, and we found that divide to 6 clusters have the best performance. 
+After trying couples of algorithm, we selected K-means to be the model, and we found that dividing to 6 clusters have the best performance. 
 
 ![Training Image 1](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/images/training_1.png)
 
@@ -51,10 +51,35 @@ We classified data to 6 clusters: normal player, experienced player, waller, aim
 
 We used the rest of data from Kaggle.com as the test set and generated a reasonable result.
 
+![Test Image 1](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/images/test_1.png)
 
+![Test Image 2](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/images/test_2.png)
+
+The result shows that there are 59252 normal players, 20398 experienced players, 3883 waller, 1369 aimbot, 896 both and 1 god in 85899 players' data. Since there is no way to verify the correctness of the prediction, we manually analyzed all kinds of hacks. Data that are classifed as hack are beliveable. However, we don't know if there are still hack in the normal or experienced players data set. 
+
+The porprotion of hack is about the same what I thought. In the data set, most hack only played less than 10 games. I think they have been banned by the Bluehole.
+
+### Code
 
 The code of training is in the [PUBG_hack_detection.ipynb](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/PUBG_hack_detection.ipynb). To run it, install jupyter notebook and use
 
 	jupyter notebook PUBG_hack_detection.ipynb
 	
 Before running, make sure you have installed numpy and sklearn. 
+
+## Reference Paper
+
+* Abbas, Osama. “Comparisions Between Data Clustering Algorithms.” The International Arab   Journal of Information Technology, vol. 5, July 2008, pp. 320–325., doi:10.18411/a-2017-023.
+
+* “Which clustering method should you choos...” XLSTAT, 18 July 2016, help.xlstat.com/customer/en/portal/articles/2062432-which-clustering-method-should-you-choose-?b_id=9283.
+
+* Bauckhage, Christian, et al. ClusteringGameBehaviorData. Clustering Game Behavior Data - IEEE Journals & Magazine, IEEE, 4 Dec. 2014, ieeexplore.ieee.org/abstract/document/6975073/. 
+
+* Bouman, Charles. “CLUSTER: An Unsupervised Algorithm for Modeling Gaussian Mixtures.”  July 2005, engineering.purdue.edu/~bouman/software/cluster/manual.pdf.  
+
+* Yang, Xing, et al. “Recognizing Driver Braking Intention with Vehicle Data Using Unsupervised Learning Methods.” 28 Mar. 2017, saemobilus-saeorg.ezproxy.lib.vt.edu/content/2017-01-0433/#authors.  
+
+* Huang, Zhexue. “Extensions to the k-Means Algorithm for Clustering Large Data Sets with Categorical Values.” SpringerLink, Kluwer Academic Publishers, link.springer.com/article/10.1023%2FA%3A1009769707641?LI=true. 
+
+* Amershi, Saleema. “Using Feature Selection and Unsupervised Clustering to Identify Affective Expressions in Educational Games.” 2016, saleemaamershi.com/papers/ITS2006_affective.pdf. 
+
