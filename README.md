@@ -34,5 +34,27 @@ From the interview, we also learned that there are four features are most import
 
 After trying couples of algorithm, we selected K-means to be the model, and we found that divide to 6 clusters have the best performance. 
 
+![Training Image 1](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/images/training_1.png)
+
+![Training Image 2](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/images/training_2.png)
+
+We classified data to 6 clusters: normal player, experienced player, waller, aimbot, both, god.
+
+* Normal player is the majority in the data set. It is low in all features.
+* Experienced player is a speical cluster that we added after test. It has no difference with normal players except the top 10 ratio. This kind of players know how to survive to the end of the game. If we don't classify it as a new cluster, it will be classified as aimbot. 
+* Waller helps players to see all enemies on the map then players can avoid danger. Therefore it has high win ratio and top 10 ratio but normal KDR and headshot kill ratio.
+* Aimbot helps players to automatically shoot on the target. Players with aimbot can easily kill a lot of people. Therefore it has high KDR and headshoot kill ratio. However, these players can be easily killed from their back, so there win ratio is not high. 
+* Both means players who used both waller and aimbot. This kind of player can dominate the game. It is high in all features. 
+* God. We have to classify it as a seperate cluster because its data are ridiculious. Their KDR is higher than 100, which means a player can kill all of other players in a game. They may used a powerful version of waller and aimbot. 
+
+### Prediction
+
+We used the rest of data from Kaggle.com as the test set and generated a reasonable result.
 
 
+
+The code of training is in the [PUBG_hack_detection.ipynb](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/PUBG_hack_detection.ipynb). To run it, install jupyter notebook and use
+
+	jupyter notebook PUBG_hack_detection.ipynb
+	
+Before running, make sure you have installed numpy and sklearn. 
