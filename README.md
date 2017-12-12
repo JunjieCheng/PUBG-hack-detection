@@ -48,9 +48,9 @@ We classified data to 6 clusters: normal player, experienced player, waller, aim
 
 * Aimbot helps cheaters to automatically shoot on the target. Players with aimbot can easily kill a lot of people. Therefore it has high KDR and headshoot kill ratio. However, these players can be easily killed from their back. Theerefore their win ratio is not high. 
 
-* Both means cheaters who used both waller and aimbot. This kind of player can dominate the game. It is high in all features. 
+* Both means cheaters who used both waller and aimbot. This kind of player can dominate the game. It is high in all dimensions. 
 
-* God. We have to classify it as a seperate cluster because its data are ridiculious. Their KDR is higher than 100, which means a cheater can kill all of other players in a game. They may used a powerful version of waller and aimbot. 
+* God. We have to classify it as a seperate cluster because its data are ridiculously high. Their KDR is higher than 100, which means a cheater can kill all of other players in a game. They may used a powerful version of waller and aimbot. 
 
 ### Prediction
 
