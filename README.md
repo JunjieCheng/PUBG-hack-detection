@@ -6,7 +6,7 @@ This project identifies cheaters in the online game PlayerUnknown’s BattleGrou
 
 ## Motivation
 
-Our motivation to do this project is because we want to solve a real-world problem. A lot of my friends and I have been annoyed by cheaters in PUBG for a very long time. Once there is a cheater in the game, all other 99 players will have a bad game experience. Cheaters are so rampant but the company cannot do anything except to ban suspicious players. Because of the mechanism of FPS game, it is almost impossible to disable hack. To decrease the delay in a FPS game, developers must allow the game to compute and save all data in the client side. Since there is no way to prevent that scripts read data from the cache. Hack in FPS game is unavoidable. Therefore, we decided to train a model to help the game company identify hack in the game.
+Our motivation to do this project is because we want to solve a real-world problem. A lot of my friends and I have been annoyed by cheaters in PUBG for a very long time. Once there is a cheater in the game, all other 99 players will have a bad game experience. Cheaters are so rampant but the company cannot do anything except to ban suspicious players. Because of the mechanism of FPS game, it is almost impossible to disable hack. To decrease the delay in a FPS game, developers must allow the game to compute some data in the client side. Since there is no way to prevent that scripts read data from the cache. Hack in FPS game is unavoidable. Therefore, we decided to train a model to help the game company identify hack in the game.
 
 ## Procedure
 
