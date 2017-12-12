@@ -14,7 +14,7 @@ Our motivation to do this project is because we want to solve a real-world probl
 
 We used two parts of data as the train set and test set. 
 
-* 500 players' data from [pubg.me/](pubg.me/). It contains top 100 users in ranking of five servers: as, na, eu, oc, and sea. After observation, we easily find a large number of abnormal data, which could be easily recognized as cheater’s data
+* 500 players' data from [pubg.me/](pubg.me/). It contains top 100 players in ranking of five servers: as, na, eu, oc, and sea. After observation, we easily find a large number of abnormal data, which could be recognized as cheater’s data
 	
 * About 85000 data from [https://www.kaggle.com/lazyjustin/pubgplayerstats](kaggle.com). Most data in this data set come from normal players. 
 	
