@@ -64,7 +64,7 @@ The result shows that there are 59252 normal players, 20398 experienced players,
 
 The porprotion of hack is about the same what I thought (Since hack is very expensive). In the data set, most hack only played less than 10 games. I think they have been banned by the Bluehole.
 
-### Code
+## Code
 
 The code of training is in the [PUBG_hack_detection.ipynb](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/PUBG_hack_detection.ipynb). To run it, install jupyter notebook and use
 
