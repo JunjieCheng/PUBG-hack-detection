@@ -60,7 +60,7 @@ We used the rest of data from Kaggle.com as the test set and generated a reasona
 
 ![Test Image 2](https://github.com/JunjieCheng/PUBG-hack-detection/blob/master/images/test_2.png)
 
-The result shows that there are 59252 normal players, 20398 experienced players, 3883 waller, 1369 aimbot, 896 both and 1 god in 85899 players' data. Since there is no way to verify the correctness of the prediction, we manually analyzed all kinds of hacks. Data that are classifed as hack are beliveable. However, we don't know if there are still hack in the normal or experienced players data set. 
+The result shows that there are 59252 normal players, 20398 experienced players, 3883 waller, 1369 aimbot, 896 both and 1 god in 85899 players' data. Since there is no way to verify the correctness of the prediction, we manually analyzed all kinds of hacks. Data that are classified as hack are believable. However, we don't know if there are still hack in the normal or experienced players data set. 
 
 The porprotion of hack is about the same what I thought (Since hack is very expensive). In the data set, most hack only played less than 10 games. I think they have been banned by the Bluehole.
 
