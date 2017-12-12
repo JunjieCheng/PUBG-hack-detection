@@ -44,13 +44,13 @@ We classified data to 6 clusters: normal player, experienced player, waller, aim
 
 * Experienced player is a speical cluster that we added after test. It has no difference with normal players except the top 10 ratio. This kind of players know how to survive to the end of the game. If we don't classify it as a new cluster, it will be classified as aimbot. It is also possible that this cluster contains cheaters, but they know how to hide themselves.
 
-* Waller helps players to see all enemies on the map then players can avoid danger. Therefore it has high win ratio and top 10 ratio but normal KDR and headshot kill ratio.
+* Waller helps cheaters to see all enemies on the map then players can avoid danger. Therefore it has high win ratio and top 10 ratio but normal KDR and headshot kill ratio.
 
-* Aimbot helps players to automatically shoot on the target. Players with aimbot can easily kill a lot of people. Therefore it has high KDR and headshoot kill ratio. However, these players can be easily killed from their back, so there win ratio is not high. 
+* Aimbot helps cheaters to automatically shoot on the target. Players with aimbot can easily kill a lot of people. Therefore it has high KDR and headshoot kill ratio. However, these players can be easily killed from their back. Theerefore their win ratio is not high. 
 
-* Both means players who used both waller and aimbot. This kind of player can dominate the game. It is high in all features. 
+* Both means cheaters who used both waller and aimbot. This kind of player can dominate the game. It is high in all features. 
 
-* God. We have to classify it as a seperate cluster because its data are ridiculious. Their KDR is higher than 100, which means a player can kill all of other players in a game. They may used a powerful version of waller and aimbot. 
+* God. We have to classify it as a seperate cluster because its data are ridiculious. Their KDR is higher than 100, which means a cheater can kill all of other players in a game. They may used a powerful version of waller and aimbot. 
 
 ### Prediction
 
