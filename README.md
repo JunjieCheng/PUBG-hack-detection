@@ -16,9 +16,9 @@ We used two parts of data as the train set and test set.
 
 * 500 players' data from [pubg.me/](pubg.me/). It contains top 100 players in ranking of five servers: as, na, eu, oc, and sea. After observation, we easily find a large number of abnormal data, which could be recognized as cheater’s data
 	
-* About 85000 data from [https://www.kaggle.com/lazyjustin/pubgplayerstats](kaggle.com). Most data in this data set come from normal players. 
+* About 85000 data from [https://www.kaggle.com/lazyjustin/pubgplayerstats](kaggle.com). Most data in this set come from normal players. 
 	
-In order to balance the proportion of cheaters and achieve a better training effectiveness, we took all ranked data and 2000 data from normal data set and mix together as the training set. In this case, the training data set could contain both normal data and data from cheaters. 
+In order to balance the proportion of cheaters and achieve a better training effectiveness, we took all ranked data and 2000 data from Kaggle and mix together as the training set. In this case, the training data set could contain both normal data and data from cheaters. 
 
 The reason we mix data from the normal data set is to increase the density of normal players, and make the clustering tight. After test, we think 2000 rows of data has the best performance. 
 
